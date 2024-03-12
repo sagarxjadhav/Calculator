@@ -1,0 +1,88 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #db6868;
+}
+
+.container{
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.calc{
+    padding: 20px;
+    background: transparent;
+    border-radius: 20px;
+    box-shadow: -1px -1px 10px rgba(198, 93, 93, 0.8);
+}
+
+#input{
+    height: 100px;
+}
+
+button{
+    border: none;
+    margin: 10px;
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    cursor: pointer;
+    background: transparent;
+    box-shadow: 6px 6px 10px rgba(190, 97, 97, 1),   /* Bottom shaddow applied */
+    -6px -6px 10px rgba(190, 97, 97, 1);             /* Top shadow applied */
+}
+
+.dgn{
+    box-shadow: inset 6px 6px 10px rgba(190, 97, 97, 1),   /* width inset keyword box shadow applied inside */
+    inset -6px -6px 10px rgba(190, 97, 97, 1);
+}
+
+#input{
+    display: flex;
+    max-width: 400px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: white;
+    overflow: hidden;
+    border: 3px solid rgba(190, 97, 97, 1);
+    border-radius: 23px;
+}
+
+
+
+@media only screen and (max-width: 600px) {
+    .container {
+        padding: 10px;
+    }
+
+    .btn{
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .calc {
+        width: 80%;
+    }
+
+    #input {
+        max-width: 100%;
+    }
+
+    button {
+        width: 40px;
+        height: 40px;
+        margin: 5px;
+    }
+
+    #input {
+        font-size: 16px;
+    }
+}
